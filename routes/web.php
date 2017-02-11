@@ -13,7 +13,7 @@
 use App\Http\Controllers\Linebot;
 
 Route::get('/', function() {
-	echo 'lanjutkan!';
+	return view ('welcome');
 }); 
 
 Route::post('/', 'Linebot@replyMessage');
